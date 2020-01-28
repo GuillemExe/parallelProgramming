@@ -1,0 +1,14 @@
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\bin\Debug\parallelProgrammingProject.exe.config
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\bin\Debug\parallelProgrammingProject.exe
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\bin\Debug\parallelProgrammingProject.pdb
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\parallelProgrammingProject.csprojAssemblyReference.cache
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\MainWindow.g.cs
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\App.g.cs
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\parallelProgrammingProject_MarkupCompile.cache
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\parallelProgrammingProject_MarkupCompile.lref
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\MainWindow.baml
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\parallelProgrammingProject.g.resources
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\parallelProgrammingProject.Properties.Resources.resources
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\parallelProgrammingProject.csproj.GenerateResource.cache
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\parallelProgrammingProject.exe
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\parallelProgrammingProject.pdb
