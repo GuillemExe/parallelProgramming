@@ -37,9 +37,6 @@ namespace parallelProgrammingProject
 
             if (usuarioAux.comprova_dni() && usuarioAux.comprova_nom() && usuarioAux.comprova_mail())
             {
-                char value = usuarioAux.calcula_lletra("ejemplo");
-
-
                 LabelValido.Visibility = Visibility.Visible;
                 LabelNoValido.Visibility = Visibility.Hidden;
             }

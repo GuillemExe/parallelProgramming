@@ -54,12 +54,9 @@ namespace parallelProgrammingProject
 
         public bool comprova_nom()
         {
-            return true;
-        }
+            var splitName = nombre.Split(null);
 
-        public char calcula_lletra(string pasador)
-        {
-            return 'x';
+            return splitName.Length > 1 && splitName.All(t => t.Length >= 3);
         }
     }
 }
