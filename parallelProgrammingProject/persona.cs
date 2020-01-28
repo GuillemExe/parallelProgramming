@@ -53,7 +53,15 @@ namespace parallelProgrammingProject
 
         public bool comprova_mail()
         {
-            return true;
+            try
+            {
+                var mailto = new System.Net.Mail.MailAddress(mail);
+                return mailto.Address == mail;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public bool comprova_nom()
