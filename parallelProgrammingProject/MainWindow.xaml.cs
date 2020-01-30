@@ -1,6 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -35,12 +37,50 @@ namespace parallelProgrammingProject
 
         public void ValidateInfo()
         {
+            // CODE ---> 1
+
+            #region ---> CODE 1
             foreach (var user in _usuarios)
             {
                 user.comprova_nom();
                 user.comprova_dni();
                 user.comprova_mail();
             }
+            #endregion
+
+            // CODE ---> 2
+
+            #region ---> CODE 2
+            foreach (var user in _usuarios)
+            {
+                user.comprova_nom();
+                user.comprova_dni();
+                user.comprova_mail();
+            }
+            #endregion
+
+
+            // stopwath 
+
+            Parallel.Invoke(() =>
+                {
+                    Console.WriteLine("Begin first task...");
+                    GetLongestWord(words);
+                },  // close first Action
+
+                () =>
+                {
+                    Console.WriteLine("Begin second task...");
+                    GetMostCommonWords(words);
+                }, //close second Action
+
+                () =>
+                {
+                    Console.WriteLine("Begin third task...");
+                    GetCountForWord(words, "sleep");
+                } //close third Action
+            ); //close parallel.invoke
+
         }
 
         public void LoadJson()
