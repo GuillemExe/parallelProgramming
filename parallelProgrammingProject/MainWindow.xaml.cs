@@ -23,8 +23,24 @@ namespace parallelProgrammingProject
 
         public MainWindow()
         {
+            // START PROJECT INTERFACE INITIALIZE
             InitializeComponent();
+
+            // LOAD JSON
             LoadJson();
+
+            // VALIDATE (NAME, DNI AND EMAIL)
+            ValidateInfo();
+        }
+
+        public void ValidateInfo()
+        {
+            foreach (var user in _usuarios)
+            {
+                user.comprova_nom();
+                user.comprova_dni();
+                user.comprova_mail();
+            }
         }
 
         public void LoadJson()

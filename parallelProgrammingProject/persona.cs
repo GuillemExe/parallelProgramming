@@ -12,6 +12,7 @@ namespace parallelProgrammingProject
         public string dni { get; set; }
         public string name { get; set; }
         public string email { get; set; }
+        public string surname { get; set; }
 
         public bool comprova_dni()
         {
@@ -66,8 +67,11 @@ namespace parallelProgrammingProject
 
         public bool comprova_nom()
         {
+            // (DEBUG TWO STRING => NEED UPDATE)
+            var nameAux = name + " " + surname;
+
             // SPLIT STRING NAME AND SURNAMES
-            var splitName = name.Split(null);
+            var splitName = nameAux.Split(null);
 
             // THERE MUST BE MORE THAN ONE NAME AND MORE THAN TWO LETTERS
             return splitName.Length > 1 && splitName.All(t => t.Length >= 3);
