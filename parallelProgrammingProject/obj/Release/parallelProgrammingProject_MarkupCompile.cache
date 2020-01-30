@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Debug\
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\
 parallelProgrammingProject
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\App.xaml
 11151548125
 
-7-235603192
+6-377697000
 14944006135
 MainWindow.xaml;
 
-True
+False
 

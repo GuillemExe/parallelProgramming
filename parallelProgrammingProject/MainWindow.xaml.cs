@@ -1,17 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace parallelProgrammingProject
 {
@@ -26,9 +19,25 @@ namespace parallelProgrammingProject
 
         persona usuario = new persona();
 
+        private persona[] _usuarios;
+
         public MainWindow()
         {
             InitializeComponent();
+            LoadJson();
+        }
+
+        public void LoadJson()
+        {
+            string localDirectory = System.IO.Directory.GetCurrentDirectory();
+
+            using (StreamReader r = new StreamReader($@"{localDirectory}\\people.json"))
+            {
+                string json = r.ReadToEnd();
+                persona[] usuario = JsonConvert.DeserializeObject<persona[]>(json);
+
+                _usuarios = usuario;
+            }
         }
 
         private void ButtonValidarDni_Click(object sender, RoutedEventArgs e)
@@ -56,13 +65,13 @@ namespace parallelProgrammingProject
         private void TextBoxNombre_TextChanged(object sender, TextChangedEventArgs e)
         {
             _nombre = TextBoxNombre.Text;
-            usuario.nombre = _nombre;
+            usuario.name = _nombre;
         }
 
         private void TextBoxMail_TextChanged(object sender, TextChangedEventArgs e)
         {
             _mail = TextBoxMail.Text;
-            usuario.mail = _mail;
+            usuario.email = _mail;
         }
     }
 }

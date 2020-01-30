@@ -1,0 +1,17 @@
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\bin\Release\parallelProgrammingProject.exe.config
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\bin\Release\parallelProgrammingProject.exe
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\bin\Release\parallelProgrammingProject.pdb
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\bin\Release\Newtonsoft.Json.dll
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\bin\Release\Newtonsoft.Json.xml
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\parallelProgrammingProject.csprojAssemblyReference.cache
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\MainWindow.g.cs
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\App.g.cs
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\parallelProgrammingProject_MarkupCompile.cache
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\parallelProgrammingProject_MarkupCompile.lref
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\MainWindow.baml
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\parallelProgrammingProject.g.resources
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\parallelProgrammingProject.Properties.Resources.resources
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\parallelProgrammingProject.csproj.GenerateResource.cache
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\parallelProgrammingProject.csproj.CopyComplete
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\parallelProgrammingProject.exe
+C:\Users\Guillem\source\repos\parallelProgrammingProject\parallelProgrammingProject\obj\Release\parallelProgrammingProject.pdb

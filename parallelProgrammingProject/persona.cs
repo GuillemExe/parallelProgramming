@@ -10,8 +10,8 @@ namespace parallelProgrammingProject
     class persona
     {
         public string dni { get; set; }
-        public string nombre { get; set; }
-        public string mail { get; set; }
+        public string name { get; set; }
+        public string email { get; set; }
 
         public bool comprova_dni()
         {
@@ -55,8 +55,8 @@ namespace parallelProgrammingProject
         {
             try
             {
-                var mailto = new System.Net.Mail.MailAddress(mail);
-                return mailto.Address == mail;
+                var mailto = new System.Net.Mail.MailAddress(email);
+                return mailto.Address == email;
             }
             catch
             {
@@ -67,7 +67,7 @@ namespace parallelProgrammingProject
         public bool comprova_nom()
         {
             // SPLIT STRING NAME AND SURNAMES
-            var splitName = nombre.Split(null);
+            var splitName = name.Split(null);
 
             // THERE MUST BE MORE THAN ONE NAME AND MORE THAN TWO LETTERS
             return splitName.Length > 1 && splitName.All(t => t.Length >= 3);
