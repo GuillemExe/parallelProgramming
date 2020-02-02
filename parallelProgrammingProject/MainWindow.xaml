@@ -20,6 +20,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -50,5 +51,29 @@
         <!-- No es valido -->
         <Label x:Name="LabelNoValido" Grid.Row="4" Grid.ColumnSpan="2" VerticalAlignment="Center" 
                Background="Red" Content="EL DNI NO ES VALIDO" HorizontalContentAlignment="Center" Visibility="Hidden"></Label>
+
+        <!-- Timing -->
+        <Grid Grid.Row="5" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <Label Content="Time CODE 1"/>
+                <Label x:Name="TimingCode1"></Label>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <Label Content="Time CODE 2"/>
+                <Label x:Name="TimingCode2"></Label>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2">
+                <Label Content="Time CODE 3"/>
+                <Label x:Name="TimingCode3"></Label>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

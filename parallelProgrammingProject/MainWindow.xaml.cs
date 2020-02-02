@@ -40,46 +40,74 @@ namespace parallelProgrammingProject
             // CODE ---> 1
 
             #region ---> CODE 1
+            var timingCode1 = System.Diagnostics.Stopwatch.StartNew();
             foreach (var user in _usuarios)
             {
                 user.comprova_nom();
                 user.comprova_dni();
                 user.comprova_mail();
             }
+            timingCode1.Stop();
             #endregion
 
             // CODE ---> 2
 
             #region ---> CODE 2
+            var timingCode2 = System.Diagnostics.Stopwatch.StartNew();
             foreach (var user in _usuarios)
             {
-                user.comprova_nom();
-                user.comprova_dni();
-                user.comprova_mail();
+                Parallel.Invoke(() =>
+                    {
+                        user.comprova_nom();
+                    },
+
+                    () =>
+                    {
+                        user.comprova_dni();
+                    },
+
+                    () =>
+                    {
+                        user.comprova_mail();
+                    } 
+                );
             }
+            timingCode2.Stop();
             #endregion
 
+            // CODE ---> 3
 
-            // stopwath 
-
+            #region ---> CODE 3
+            var timingCode3 = System.Diagnostics.Stopwatch.StartNew();
             Parallel.Invoke(() =>
                 {
-                    Console.WriteLine("Begin first task...");
-                    GetLongestWord(words);
-                },  // close first Action
+                    foreach (var user in _usuarios)
+                    {
+                        user.comprova_nom();
+                    }
+                },
+                () =>
+                {
+                    foreach (var user in _usuarios)
+                    {
+                        user.comprova_dni();
+                    }
+                },
 
                 () =>
                 {
-                    Console.WriteLine("Begin second task...");
-                    GetMostCommonWords(words);
-                }, //close second Action
+                    foreach (var user in _usuarios)
+                    {
+                        user.comprova_mail();
+                    }
+                }
+            );
+            timingCode3.Stop();
+            #endregion
 
-                () =>
-                {
-                    Console.WriteLine("Begin third task...");
-                    GetCountForWord(words, "sleep");
-                } //close third Action
-            ); //close parallel.invoke
+            TimingCode1.Content = timingCode1.ElapsedMilliseconds;
+            TimingCode2.Content = timingCode2.ElapsedMilliseconds;
+            TimingCode3.Content = timingCode3.ElapsedMilliseconds;
 
         }
 
