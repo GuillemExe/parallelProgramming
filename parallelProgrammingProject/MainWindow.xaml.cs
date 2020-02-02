@@ -1,11 +1,8 @@
-﻿using System;
-using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using Newtonsoft.Json;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
 
 
 namespace parallelProgrammingProject
@@ -123,22 +120,22 @@ namespace parallelProgrammingProject
 
         public void LoadJson()
         {
-            string localDirectory = System.IO.Directory.GetCurrentDirectory();
+            var localDirectory = System.IO.Directory.GetCurrentDirectory();
 
-            using (StreamReader r = new StreamReader($@"{localDirectory}\\people.json"))
+            using (var r = new StreamReader($@"{localDirectory}\\people.json"))
             {
-                string json = r.ReadToEnd();
-                persona[] usuario = JsonConvert.DeserializeObject<persona[]>(json);
+                var json = r.ReadToEnd();
+                var Users = JsonConvert.DeserializeObject<persona[]>(json);
 
-                _usuarios = usuario;
+                _usuarios = Users;
             }
         }
 
         private void ButtonValidarDni_Click(object sender, RoutedEventArgs e)
         {
-            var usuarioAux = usuario;
+            var UsersAux = usuario;
 
-            if (usuarioAux.comprova_dni() && usuarioAux.comprova_nom() && usuarioAux.comprova_mail())
+            if (UsersAux.comprova_dni() && UsersAux.comprova_nom() && UsersAux.comprova_mail())
             {
                 LabelValido.Visibility = Visibility.Visible;
                 LabelNoValido.Visibility = Visibility.Hidden;
