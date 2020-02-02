@@ -67,8 +67,9 @@ namespace parallelProgrammingProject
 
         public bool comprova_nom()
         {
-            // (DEBUG TWO STRING => NEED UPDATE)
-            var nameAux = name + " " + surname;
+            // NAME AND SURNAME TOGETHER IN A VARIABLE, OR
+            // NAME AND LAST NAME SEPARATED BY TWO VARIABLES
+            var nameAux = surname != null ? name + " " + surname : name;
 
             // SPLIT STRING NAME AND SURNAMES
             var splitName = nameAux.Split(null);
