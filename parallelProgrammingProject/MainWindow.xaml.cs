@@ -39,10 +39,14 @@ namespace parallelProgrammingProject
             // un tanto inadecuada del uso de este, y el tercero, la forma
             // más optima que he podido encontrar.
 
-            // Cuando realicemos las pruebas podremos observar que el proceso/código 3
-            // es mucho más rápido que el anterior.Eso se debe a que el sistema esta
-            // haciendo los tres tipos de comprobaciones al mismo tiempo inclusive
-            // de diferentes usuarios, mejorando el tiempo de ejecución.
+            // Cuando realicemos las pruebas podremos observar que el proceso / código 3
+            // es mucho más rápido que el proceso / código 2.Eso se debe a que el sistema
+            // está haciendo los tres tipos de comprobaciones al mismo tiempo inclusive de
+            // diferentes usuarios, mejorando el tiempo de ejecución. Mientras que el
+            // proceso/código 2 realiza el “paralel invoke” va usuario por usuario realizando
+            // los tres procesos simultáneamente, al realizar este workflow no podrá pasar
+            // al siguiente usuario, hasta que haya terminado con el ultimo proceso.
+
 
             // CODE ---> 1
 
